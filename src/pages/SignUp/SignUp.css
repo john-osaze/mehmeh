@@ -1,0 +1,104 @@
+:root{
+    --main: rgb(241, 241, 39);
+    --secondary: rgb(119, 119, 2); 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SignUp{
+    background-color: var(--main);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SignUp section{
+    display: flex;
+    height: 70vh;
+    width: 70%;
+    margin: auto;
+    border: none;
+}
+.SignUp .left{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/1294429156/photo/3d-rendered-laughing-tears-emoji-faces-stock-photo.jpg?s=612x612&w=0&k=20&c=T6Kwg8Gfn-qUSWd8jWT7bwLh2aGvPi30c0DE5M8n0AE=');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.SignUp .right{
+    background-color: var(--secondary);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.SignUp .options{
+    display: flex;
+    gap: 30px;
+    color: rgb(60, 60, 60);
+    margin-bottom: 25px;
+}
+.SignUp form{
+    width: 65%;
+}
+.SignUp .input-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.SignUp .input-field label{
+    font-size: 0.7rem;
+    color: var(--main);
+}
+.SignUp .input-field input{
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: 1px solid var(--main);   
+}
+.SignUp .input-field input:focus{
+    margin-top: 6px;
+    transition: 0.1s;
+    outline: none;
+}
+.SignUp .actions{
+    display: flex;
+    margin: 20px 0;
+    font-size: 0.7rem;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.SignUp .actions p:nth-child(2){
+    text-decoration: underline;
+}
+.SignUp button{
+    padding: 8px 9px;
+    width: 100px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--main);
+    border: none;
+    border-radius: 15px;
+}
+.SignUp .remember{
+    display: flex;
+    align-items: center;
+}
+.SignUp .Selected{
+    color: var(--main);
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--main);
+}
